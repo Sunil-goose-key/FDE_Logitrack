@@ -209,101 +209,101 @@
     }
   ],
   "connections": {
-    "node-1-schedule": {
+    "Schedule Trigger": {
       "main": [
         [
           {
-            "node": "node-2-fetch-raw",
+            "node": "Fetch Shipment CSV",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "node-2-fetch-raw": {
+    "Fetch Shipment CSV": {
       "main": [
         [
           {
-            "node": "node-3-data-gate",
+            "node": "Data Contract Gate",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "node-3-data-gate": {
+    "Data Contract Gate": {
       "main": [
         [
           {
-            "node": "node-4-quality-if",
+            "node": "Data Quality Gate",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "node-4-quality-if": {
+    "Data Quality Gate": {
       "main": [
         [
           {
-            "node": "node-5-read-notifications",
+            "node": "Read Notifications Sheet",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "node-11-build-escalation",
+            "node": "Build Data Ops Escalation",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "node-5-read-notifications": {
+    "Read Notifications Sheet": {
       "main": [
         [
           {
-            "node": "node-6-risk-if",
+            "node": "Risk Level Branch",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "node-6-risk-if": {
+    "Risk Level Branch": {
       "main": [
         [
           {
-            "node": "node-7-slack-high",
+            "node": "Slack Alert - High Risk",
             "type": "main",
             "index": 0
           },
           {
-            "node": "node-8-gmail-high",
+            "node": "Gmail Notification - High Risk",
             "type": "main",
             "index": 0
           },
           {
-            "node": "node-9-whatsapp-high",
+            "node": "WhatsApp Notification - High Risk",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "node-10-queue-medium",
+            "node": "Queue Scheduled Notifications",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "node-11-build-escalation": {
+    "Build Data Ops Escalation": {
       "main": [
         [
           {
-            "node": "node-12-slack-escalation",
+            "node": "Slack Alert - Data Ops",
             "type": "main",
             "index": 0
           }
