@@ -48,7 +48,7 @@
       ],
       "parameters": {
         "language": "javaScript",
-        "code": "const items = $input.all();\nlet nullIdCount = 0;\nlet nullFlagCount = 0;\nlet nonPositiveWeightCount = 0;\n\nfor (const item of items) {\n  const row = item.json;\n  if (!row.shipment_id) nullIdCount++;\n  if (row.delayed_flag === undefined || row.delayed_flag === null || row.delayed_flag === '') nullFlagCount++;\n  if (Number(row.weight_kg) <= 0) nonPositiveWeightCount++;\n}\n\nconst totalIssues = nullIdCount + nullFlagCount + nonPositiveWeightCount;\n\nreturn [{\n  json: {\n    status: totalIssues === 0 ? 'OK' : 'BLOCKED',\n    null_shipment_id: nullIdCount,\n    null_delayed_flag: nullFlagCount,\n    non_positive_weight: nonPositiveWeightCount,\n    total_issues: totalIssues\n  }\n}];"
+        "code": "const inputItems = $input.all();\nconst rows = Array.isArray(inputItems) ? inputItems : [];\n\nlet nullIdCount = 0;\nlet nullFlagCount = 0;\nlet nonPositiveWeightCount = 0;\n\nfor (const item of rows) {\n  const row = item?.json ?? {};\n  if (!row.shipment_id) nullIdCount += 1;\n  if (row.delayed_flag === undefined || row.delayed_flag === null || row.delayed_flag === '') nullFlagCount += 1;\n  const weight = Number(row.weight_kg);\n  if (!Number.isNaN(weight) && weight <= 0) nonPositiveWeightCount += 1;\n}\n\nconst totalIssues = nullIdCount + nullFlagCount + nonPositiveWeightCount;\nconst summary = {\n  status: totalIssues === 0 ? 'OK' : 'BLOCKED',\n  null_shipment_id: nullIdCount,\n  null_delayed_flag: nullFlagCount,\n  non_positive_weight: nonPositiveWeightCount,\n  total_issues: totalIssues,\n  inspected_items: rows.length\n};\n\nreturn rows.length > 0 ? [{ json: summary }] : [{ json: { ...summary, status: 'BLOCKED' } }];"
       },
       "notes": "Checks for null shipment IDs, null delayed flags, and non-positive weight."
     },
@@ -185,7 +185,7 @@
       ],
       "parameters": {
         "language": "javaScript",
-        "code": "const message = `Daily shipment processing was blocked. Missing shipment IDs: ${$json.null_shipment_id}, missing delay flags: ${$json.null_delayed_flag}, non-positive weights: ${$json.non_positive_weight}. Please fix the source file before rerunning the workflow.`;\nreturn [{ json: { response: message } }];"
+        "code": "const message = `Daily shipment processing was blocked. Missing shipment IDs: ${$json.null_shipment_id ?? 0}, missing delay flags: ${$json.null_delayed_flag ?? 0}, non-positive weights: ${$json.non_positive_weight ?? 0}. Please fix the source file before rerunning the workflow.`;\nreturn [{ json: { response: message } }];"
       },
       "notes": "Creates a plain-language escalation without relying on an AI node."
     },
