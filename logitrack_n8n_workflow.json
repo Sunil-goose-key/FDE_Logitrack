@@ -1,0 +1,319 @@
+{
+  "name": "LogiTrack Daily Delay Alert Workflow",
+  "nodes": [
+    {
+      "id": "node-1-schedule",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 6 * * *"
+            }
+          ]
+        }
+      },
+      "notes": "Runs daily at 06:00."
+    },
+    {
+      "id": "node-2-fetch-raw",
+      "name": "Fetch Shipment CSV",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        460,
+        300
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "https://logitrack-data.internal/shipments/logitrack_raw.csv"
+      },
+      "notes": "Replace with the real CSV endpoint and credentials."
+    },
+    {
+      "id": "node-3-data-gate",
+      "name": "Data Contract Gate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        680,
+        300
+      ],
+      "parameters": {
+        "language": "javaScript",
+        "code": "const items = $input.all();\nlet nullIdCount = 0;\nlet nullFlagCount = 0;\nlet nonPositiveWeightCount = 0;\n\nfor (const item of items) {\n  const row = item.json;\n  if (!row.shipment_id) nullIdCount++;\n  if (row.delayed_flag === undefined || row.delayed_flag === null || row.delayed_flag === '') nullFlagCount++;\n  if (Number(row.weight_kg) <= 0) nonPositiveWeightCount++;\n}\n\nconst totalIssues = nullIdCount + nullFlagCount + nonPositiveWeightCount;\n\nreturn [{\n  json: {\n    status: totalIssues === 0 ? 'OK' : 'BLOCKED',\n    null_shipment_id: nullIdCount,\n    null_delayed_flag: nullFlagCount,\n    non_positive_weight: nonPositiveWeightCount,\n    total_issues: totalIssues\n  }\n}];"
+      },
+      "notes": "Checks for null shipment IDs, null delayed flags, and non-positive weight."
+    },
+    {
+      "id": "node-4-quality-if",
+      "name": "Data Quality Gate",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        900,
+        300
+      ],
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.status }}",
+              "operation": "equal",
+              "value2": "OK"
+            }
+          ]
+        }
+      },
+      "notes": "True branch continues to notifications. False branch sends an escalation."
+    },
+    {
+      "id": "node-5-read-notifications",
+      "name": "Read Notifications Sheet",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1120,
+        200
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "https://sheets.googleapis.com/v4/spreadsheets/{{$env.LOGITRACK_GOOGLE_SHEET_ID}}/values/logitrack_notifications_today!A:J"
+      },
+      "notes": "Reads the scored shipment notifications. Add Google Sheets auth after import."
+    },
+    {
+      "id": "node-6-risk-if",
+      "name": "Risk Level Branch",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1340,
+        200
+      ],
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.delay_risk }}",
+              "operation": "equal",
+              "value2": "High"
+            }
+          ]
+        }
+      },
+      "notes": "High-risk shipments go to three live channels. Other shipments are queued."
+    },
+    {
+      "id": "node-7-slack-high",
+      "name": "Slack Alert - High Risk",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1580,
+        60
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "{{$env.LOGITRACK_SLACK_WEBHOOK_URL}}",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\"text\":\"*Delay Alert - High Risk*\\n*Shipment:* {{$json.shipment_id}}  *Route:* {{$json.origin_city}} -> {{$json.destination_city}}\\n*Product:* {{$json.product_type}}  *Carrier:* {{$json.carrier}}\\n*Expected delay:* {{$json.estimated_delay_days}} days past promised date\\n*Notification sent to client:* Yes\"}"
+      },
+      "notes": "Posts the exact high-risk Slack alert format to the ops channel webhook."
+    },
+    {
+      "id": "node-8-gmail-high",
+      "name": "Gmail Notification - High Risk",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1580,
+        170
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://gmail.googleapis.com/gmail/v1/users/me/messages/send"
+      },
+      "notes": "Replace with a Gmail node or authenticated Gmail API call after import."
+    },
+    {
+      "id": "node-9-whatsapp-high",
+      "name": "WhatsApp Notification - High Risk",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1580,
+        280
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.twilio.com/2010-04-01/Accounts/{{$env.TWILIO_ACCOUNT_SID}}/Messages.json"
+      },
+      "notes": "Replace with your Twilio WhatsApp payload and credentials after import."
+    },
+    {
+      "id": "node-10-queue-medium",
+      "name": "Queue Scheduled Notifications",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1580,
+        410
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://sheets.googleapis.com/v4/spreadsheets/{{$env.LOGITRACK_GOOGLE_SHEET_ID}}/values/Scheduled%20Notifications!A:J:append?valueInputOption=USER_ENTERED"
+      },
+      "notes": "Appends non-high-risk records to the scheduled notification sheet."
+    },
+    {
+      "id": "node-11-build-escalation",
+      "name": "Build Data Ops Escalation",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1120,
+        500
+      ],
+      "parameters": {
+        "language": "javaScript",
+        "code": "const message = `Daily shipment processing was blocked. Missing shipment IDs: ${$json.null_shipment_id}, missing delay flags: ${$json.null_delayed_flag}, non-positive weights: ${$json.non_positive_weight}. Please fix the source file before rerunning the workflow.`;\nreturn [{ json: { response: message } }];"
+      },
+      "notes": "Creates a plain-language escalation without relying on an AI node."
+    },
+    {
+      "id": "node-12-slack-escalation",
+      "name": "Slack Alert - Data Ops",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1340,
+        500
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "{{$env.LOGITRACK_DATA_OPS_SLACK_WEBHOOK_URL}}",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\"text\":\"{{$json.response}}\"}"
+      },
+      "notes": "Sends the data quality failure alert to the data-ops Slack webhook."
+    }
+  ],
+  "connections": {
+    "node-1-schedule": {
+      "main": [
+        [
+          {
+            "node": "node-2-fetch-raw",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "node-2-fetch-raw": {
+      "main": [
+        [
+          {
+            "node": "node-3-data-gate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "node-3-data-gate": {
+      "main": [
+        [
+          {
+            "node": "node-4-quality-if",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "node-4-quality-if": {
+      "main": [
+        [
+          {
+            "node": "node-5-read-notifications",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "node-11-build-escalation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "node-5-read-notifications": {
+      "main": [
+        [
+          {
+            "node": "node-6-risk-if",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "node-6-risk-if": {
+      "main": [
+        [
+          {
+            "node": "node-7-slack-high",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "node-8-gmail-high",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "node-9-whatsapp-high",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "node-10-queue-medium",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "node-11-build-escalation": {
+      "main": [
+        [
+          {
+            "node": "node-12-slack-escalation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "versionId": "logitrack-import-safe-v2"
+}
