@@ -1,0 +1,351 @@
+shipment_id,carrier,origin_city,destination_city,product_type,weight_kg,distance_km,promised_transit_days,actual_transit_days,delay_days,customs_status,num_stops,carrier_rating,ship_date,delayed_flag
+SHP00001,FastShip,Shanghai,Frankfurt,Electronics,3868.2,10769,13,23,10,Pending,3,2.7,2024-02-24,1
+SHP00002,GlobalFreight,Shanghai,Sydney,Industrial,2047.8,2332,18,27,9,Cleared,2,3.6,2024-08-31,1
+SHP00003,GlobalFreight,Rotterdam,Cape Town,Pharma,1821.4,12550,12,10,0,Cleared,0,4.1,2024-12-09,0
+SHP00004,GlobalFreight,Rotterdam,Frankfurt,Industrial,1553.2,12390,6,11,5,Exempt,3,2.0,2024-07-20,1
+SHP00005,QuickMove,Rotterdam,New York,Pharma,1494.1,5750,17,25,8,Exempt,0,2.8,2024-02-11,1
+SHP00006,AirExpress,Chicago,Tokyo,Industrial,4633.2,11402,16,17,1,Pending,2,3.5,2024-06-29,0
+SHP00007,AirExpress,SÃ£o Paulo,Tokyo,Consumer Goods,3691.5,15352,3,2,0,Pending,3,4.4,2024-03-10,0
+SHP00008,FastShip,Chicago,London,Perishable,1575.5,3194,6,9,3,Pending,4,4.1,2024-11-28,1
+SHP00009,GlobalFreight,Singapore,Frankfurt,Industrial,3965.3,10966,17,30,13,Pending,2,2.5,2024-10-30,1
+SHP00010,QuickMove,Singapore,Sydney,Pharma,431.2,12545,8,18,10,Exempt,4,2.7,2024-01-12,1
+SHP00011,GroundPlus,Dubai,Frankfurt,Pharma,4535.2,15652,9,15,6,Pending,0,3.2,2024-08-07,1
+SHP00012,GroundPlus,Rotterdam,London,Electronics,4790.6,6074,21,22,1,Cleared,4,3.3,2024-08-20,0
+SHP00013,AirExpress,Mumbai,London,Pharma,960.8,9222,12,25,13,Exempt,1,3.3,2024-04-15,1
+SHP00014,GroundPlus,Shanghai,Cape Town,Perishable,3636.3,6705,16,19,3,Exempt,1,2.1,2024-05-14,1
+,GlobalFreight,SÃ£o Paulo,Toronto,Pharma,1854.5,15513,5,3,0,Exempt,1,4.6,2024-12-20,0
+,AirExpress,Dubai,London,Industrial,3545.2,8896,5,6,1,Cleared,0,3.0,2024-04-30,0
+,AirExpress,Rotterdam,Frankfurt,Consumer Goods,3550.7,1991,3,9,6,Exempt,2,4.9,2024-12-09,1
+,QuickMove,Shanghai,Frankfurt,Electronics,2906.6,9029,8,22,14,Exempt,2,4.6,2024-03-08,1
+,FastShip,Rotterdam,Tokyo,Consumer Goods,2170.3,9032,6,14,8,Cleared,1,3.5,2024-05-23,1
+,QuickMove,Chicago,Sydney,Perishable,3068.5,9142,19,27,8,Exempt,1,2.9,2024-09-08,1
+,GlobalFreight,SÃ£o Paulo,Cape Town,Industrial,275.6,5370,4,9,5,Pending,0,3.4,2024-03-24,1
+,AirExpress,Chicago,New York,Industrial,213.6,12182,20,33,13,Exempt,3,2.3,2024-03-16,1
+,FastShip,Rotterdam,New York,Pharma,4342.2,6419,8,22,14,Held,4,4.7,2024-10-26,1
+,GlobalFreight,SÃ£o Paulo,New York,Consumer Goods,3836.6,6416,16,16,0,Pending,3,4.0,2024-06-17,0
+,FastShip,Rotterdam,Tokyo,Electronics,1976.9,3975,13,15,2,Cleared,0,3.4,2024-12-28,0
+,AirExpress,Chicago,Tokyo,Perishable,2975.1,690,13,12,0,Exempt,2,4.8,2024-10-18,0
+,GlobalFreight,Shanghai,Cape Town,Electronics,4009.8,9771,13,12,0,Cleared,4,4.9,2024-07-14,0
+,FastShip,Chicago,Sydney,Pharma,1208.0,13571,5,3,0,Pending,1,3.2,2024-07-25,0
+,QuickMove,Dubai,Cape Town,Pharma,611.8,16584,16,23,7,Pending,2,4.0,2024-07-07,1
+,GroundPlus,Shanghai,Toronto,Industrial,4428.2,16111,11,22,11,Cleared,3,4.4,2024-11-10,1
+,GlobalFreight,Chicago,Tokyo,Industrial,473.8,17321,13,25,12,Pending,1,4.8,2024-09-26,1
+,GroundPlus,Mumbai,Sydney,Industrial,2192.4,16150,12,14,2,Pending,2,4.5,2024-09-24,0
+,AirExpress,Rotterdam,Frankfurt,Electronics,2759.5,1977,19,20,1,Exempt,3,2.3,2024-12-04,0
+,GroundPlus,Singapore,Sydney,Perishable,1281.8,3179,19,17,0,Cleared,3,2.5,2024-04-03,0
+,AirExpress,Mumbai,New York,Industrial,4385.0,10253,13,25,12,Exempt,4,4.4,2024-06-23,1
+,GlobalFreight,Shanghai,London,Electronics,3737.7,8997,6,17,11,Cleared,0,3.2,2024-01-07,1
+,GlobalFreight,Dubai,Toronto,Industrial,3462.1,16448,12,21,9,Exempt,2,2.3,2024-03-10,1
+,FastShip,Shanghai,New York,Electronics,3483.2,6667,3,7,4,Exempt,1,3.9,2024-08-11,1
+,GroundPlus,Shanghai,New York,Perishable,3850.9,5355,18,29,11,Cleared,0,2.5,2024-03-19,1
+,AirExpress,Chicago,Toronto,Electronics,4300.4,8450,9,16,7,Exempt,0,3.0,2024-02-22,1
+,AirExpress,Chicago,Cape Town,Industrial,3688.0,10028,4,17,13,Exempt,3,3.5,2024-11-09,1
+,AirExpress,Shanghai,Tokyo,Electronics,2646.3,14328,21,29,8,Cleared,2,4.7,2024-08-01,1
+,AirExpress,Mumbai,Toronto,Consumer Goods,4695.4,11862,17,28,11,Cleared,1,2.9,2024-04-08,1
+,AirExpress,Rotterdam,Toronto,Pharma,2543.1,11613,17,19,2,Held,3,4.9,2024-12-10,0
+SHP00045,QuickMove,Singapore,Toronto,Pharma,3113.0,9755,5,18,13,Pending,1,2.6,2024-11-06,1
+SHP00046,AirExpress,Mumbai,Cape Town,Industrial,4715.8,16678,12,17,5,Pending,4,2.1,2024-01-10,1
+SHP00047,QuickMove,Rotterdam,Sydney,Pharma,881.8,16997,4,4,0,Held,3,2.3,2024-04-26,0
+SHP00048,FastShip,SÃ£o Paulo,London,Industrial,1296.5,11651,14,13,0,Held,1,4.6,2024-09-20,0
+SHP00049,GroundPlus,Dubai,New York,Electronics,4633.9,14846,17,18,1,Cleared,4,3.8,2024-02-22,0
+SHP00050,GroundPlus,Mumbai,Frankfurt,Electronics,843.6,4368,9,18,9,Pending,2,4.1,2024-09-16,1
+SHP00051,AirExpress,Dubai,Cape Town,Electronics,779.9,12418,13,15,2,Cleared,1,3.3,2024-07-31,0
+SHP00052,FastShip,Shanghai,Cape Town,Industrial,1713.2,17048,8,8,0,Held,2,4.1,2024-07-31,0
+SHP00053,QuickMove,Dubai,Tokyo,Pharma,766.5,17855,16,21,5,Pending,3,3.2,2024-07-28,1
+SHP00054,AirExpress,Singapore,Frankfurt,Perishable,4719.3,15002,7,5,0,Cleared,0,3.0,2024-07-24,0
+SHP00055,GlobalFreight,Chicago,New York,Industrial,3798.4,5446,21,20,0,Held,3,3.2,2024-12-14,0
+SHP00056,GroundPlus,Singapore,Sydney,Perishable,4547.1,758,11,25,14,Pending,3,3.3,2024-04-15,1
+SHP00057,GroundPlus,SÃ£o Paulo,Cape Town,Consumer Goods,3263.7,11813,15,19,4,Held,0,2.1,2024-06-20,1
+SHP00058,AirExpress,Dubai,Tokyo,Pharma,2607.1,9803,9,9,0,Held,4,3.0,2024-11-21,0
+SHP00059,GlobalFreight,Mumbai,New York,Consumer Goods,2966.6,8408,12,23,11,Cleared,0,4.5,2024-05-12,1
+SHP00060,GroundPlus,Rotterdam,New York,Electronics,3785.2,4587,17,24,7,Cleared,3,3.0,2024-04-30,
+SHP00061,GroundPlus,SÃ£o Paulo,Tokyo,Consumer Goods,4224.0,8162,14,21,7,Held,4,4.0,2024-07-12,
+SHP00062,GroundPlus,Dubai,London,Electronics,1646.0,6809,14,26,12,Cleared,1,4.1,2024-07-29,
+SHP00063,FastShip,Mumbai,New York,Industrial,4443.7,16105,9,21,12,Cleared,2,4.0,2024-07-25,
+SHP00064,GroundPlus,SÃ£o Paulo,Frankfurt,Industrial,4361.4,16845,16,28,12,Exempt,3,4.5,2024-03-14,
+SHP00065,GroundPlus,Shanghai,Toronto,Industrial,655.6,17316,19,20,1,Pending,3,3.4,2024-03-21,
+SHP00066,GroundPlus,Rotterdam,New York,Consumer Goods,4263.1,4115,6,15,9,Held,0,3.6,2024-03-01,
+SHP00067,QuickMove,Rotterdam,Sydney,Perishable,1477.0,1416,7,9,2,Exempt,0,4.8,2024-06-05,
+SHP00068,QuickMove,Shanghai,London,Industrial,20.4,11924,5,4,0,Exempt,3,3.7,2024-10-16,
+SHP00069,AirExpress,Rotterdam,Cape Town,Industrial,2381.4,4851,7,21,14,Exempt,3,4.0,2024-03-17,
+SHP00070,QuickMove,Mumbai,Cape Town,Consumer Goods,3325.9,13922,15,20,5,Exempt,2,3.6,2024-12-09,
+SHP00071,AirExpress,Dubai,Sydney,Electronics,4331.1,1312,21,28,7,Cleared,4,2.3,2024-11-12,
+SHP00072,GroundPlus,SÃ£o Paulo,Cape Town,Electronics,4786.9,17596,9,22,13,Cleared,0,4.0,2024-09-29,
+SHP00073,GlobalFreight,Mumbai,Sydney,Pharma,1234.0,15056,5,13,8,Exempt,4,2.1,2024-01-12,
+SHP00074,QuickMove,Chicago,London,Industrial,130.0,17798,13,23,10,Held,0,2.3,2024-02-20,
+SHP00075,GroundPlus,Shanghai,Sydney,Pharma,921.5,3436,7,14,7,Exempt,1,2.2,2024-06-15,
+SHP00076,GlobalFreight,Mumbai,Tokyo,Electronics,1497.1,3735,13,15,2,Exempt,2,2.8,2024-03-02,
+SHP00077,FastShip,Shanghai,London,Consumer Goods,2934.3,16653,19,33,14,Exempt,0,2.8,2024-06-11,
+SHP00078,AirExpress,SÃ£o Paulo,Toronto,Electronics,2426.0,13852,10,8,0,Held,4,4.9,2024-12-11,
+SHP00079,FastShip,Shanghai,Cape Town,Consumer Goods,3261.2,4614,12,23,11,Exempt,0,4.5,2024-09-13,
+SHP00080,GlobalFreight,Singapore,London,Perishable,2706.8,6011,10,21,11,Exempt,0,2.0,2024-08-25,
+SHP00081,GroundPlus,Rotterdam,Tokyo,Pharma,12.7,16300,11,17,6,Exempt,2,4.5,2024-04-18,
+SHP00082,GroundPlus,Singapore,Frankfurt,Perishable,237.0,2791,12,12,0,Exempt,0,4.5,2024-10-11,
+SHP00083,QuickMove,Chicago,London,Consumer Goods,2529.1,10930,13,19,6,Exempt,2,2.7,2024-06-13,
+SHP00084,QuickMove,Shanghai,Toronto,Consumer Goods,1649.0,4881,3,16,13,Cleared,0,4.0,2024-07-30,
+SHP00085,GroundPlus,Dubai,Tokyo,Industrial,3814.7,3159,5,3,0,Exempt,0,3.1,2024-07-11,0
+SHP00086,GroundPlus,Rotterdam,Toronto,Pharma,4197.3,776,6,18,12,Held,1,3.3,2024-04-23,1
+SHP00087,FastShip,Singapore,Sydney,Perishable,965.6,10434,10,15,5,Exempt,2,2.1,2024-09-09,1
+SHP00088,GroundPlus,Shanghai,New York,Pharma,4921.5,13478,6,12,6,Exempt,1,3.7,2024-12-03,1
+SHP00089,GroundPlus,Dubai,Tokyo,Consumer Goods,2830.0,2641,21,23,2,Cleared,1,2.8,2024-10-18,0
+SHP00090,GlobalFreight,SÃ£o Paulo,Tokyo,Perishable,967.3,1257,20,26,6,Exempt,0,4.8,2024-11-24,1
+SHP00091,FastShip,Singapore,Sydney,Industrial,4223.3,13832,11,12,1,Exempt,3,3.1,2024-01-23,0
+SHP00092,GlobalFreight,Mumbai,Sydney,Industrial,2666.7,10862,3,13,10,Pending,2,2.2,2024-10-19,1
+SHP00093,FastShip,Dubai,London,Industrial,4789.3,8691,9,12,3,Held,2,2.2,2024-11-16,1
+SHP00094,FastShip,Mumbai,Toronto,Industrial,4042.2,11454,11,16,5,Cleared,3,2.7,2024-06-23,1
+SHP00095,FastShip,Singapore,Sydney,Consumer Goods,3972.6,2889,17,18,1,Exempt,4,2.4,2024-02-01,0
+SHP00096,FastShip,Chicago,Sydney,Electronics,3915.4,2531,17,16,0,Held,4,3.9,2024-02-03,0
+SHP00097,FastShip,Dubai,New York,Consumer Goods,270.5,12999,15,16,1,Exempt,1,4.6,2024-12-03,0
+SHP00098,GroundPlus,Mumbai,Toronto,Industrial,2326.4,14528,6,14,8,Cleared,3,3.6,2024-10-27,1
+SHP00099,GlobalFreight,Mumbai,New York,Electronics,2979.9,2713,21,25,4,Pending,4,2.8,2024-08-03,1
+SHP00100,AirExpress,Dubai,Frankfurt,Industrial,-343,5011,4,3,0,Pending,2,3.8,2024-09-19,0
+SHP00101,QuickMove,Rotterdam,Frankfurt,Consumer Goods,-275,5330,18,25,7,Held,2,3.1,2024-01-05,1
+SHP00102,GroundPlus,Dubai,Tokyo,Pharma,-337,17116,20,19,0,Exempt,2,2.6,2024-04-12,0
+SHP00103,GlobalFreight,Singapore,New York,Perishable,-93,16088,17,25,8,Held,4,2.9,2024-06-17,1
+SHP00104,FastShip,Chicago,Cape Town,Electronics,-386,621,10,15,5,Exempt,4,2.6,2024-09-03,1
+SHP00105,QuickMove,Singapore,Tokyo,Industrial,-68,6537,3,12,9,Cleared,0,3.1,2024-10-11,1
+SHP00106,GlobalFreight,Rotterdam,Toronto,Pharma,-463,12293,4,2,0,Pending,1,2.9,2024-04-22,0
+SHP00107,QuickMove,Dubai,London,Perishable,-20,8559,8,12,4,Cleared,1,4.5,2024-02-21,1
+SHP00108,GlobalFreight,Chicago,Tokyo,Electronics,-97,7389,12,24,12,Pending,2,4.4,2024-12-04,1
+SHP00109,GroundPlus,Singapore,Frankfurt,Industrial,-365,2642,6,8,2,Pending,1,2.6,2024-07-12,0
+SHP00110,QuickMove,Rotterdam,Frankfurt,Industrial,-332,8513,4,8,4,Held,1,3.0,2024-01-28,1
+SHP00111,QuickMove,Singapore,London,Consumer Goods,-208,16523,9,9,0,Exempt,4,2.2,2024-09-17,0
+SHP00112,GroundPlus,Rotterdam,Toronto,Consumer Goods,-215,11045,14,28,14,Exempt,3,3.4,2024-10-24,1
+SHP00113,GroundPlus,Dubai,New York,Pharma,-302,7151,17,22,5,Exempt,1,2.9,2024-07-12,1
+SHP00114,GlobalFreight,Singapore,Sydney,Perishable,-31,4901,5,12,7,Exempt,4,3.1,2024-10-25,1
+SHP00115,AirExpress,SÃ£o Paulo,Frankfurt,Perishable,2136.3,15820,16,27,11,Held,3,3.0,2024-07-14,1
+SHP00116,FastShip,Shanghai,Toronto,Pharma,1335.5,2986,14,14,0,Held,4,3.5,2024-11-25,0
+SHP00117,FastShip,Singapore,Sydney,Pharma,501.1,2837,14,13,0,Pending,2,2.6,2024-06-17,0
+SHP00118,QuickMove,Rotterdam,Tokyo,Perishable,961.3,5017,20,26,6,Cleared,2,2.8,2024-06-26,1
+SHP00119,AirExpress,Chicago,Cape Town,Consumer Goods,3791.5,889,18,32,14,Pending,3,2.7,2024-04-17,1
+SHP00120,AirExpress,Shanghai,Frankfurt,Consumer Goods,3932.0,15859,17,25,8,Cleared,2,4.5,2024-08-07,1
+SHP00121,AirExpress,Shanghai,Toronto,Industrial,4266.2,1486,14,16,2,Pending,2,4.8,2024-01-05,0
+SHP00122,AirExpress,Singapore,Tokyo,Perishable,1705.7,14234,16,26,10,Held,2,3.8,2024-10-17,1
+SHP00123,FastShip,Shanghai,London,Perishable,2845.3,13308,15,19,4,Exempt,0,3.6,2024-04-06,1
+SHP00124,AirExpress,Mumbai,Sydney,Consumer Goods,4810.1,10482,5,8,3,Cleared,4,2.5,2024-12-18,1
+SHP00125,GroundPlus,Chicago,New York,Pharma,1003.0,13144,12,16,4,Pending,2,4.0,2024-02-05,1
+SHP00126,AirExpress,Mumbai,Sydney,Consumer Goods,65.1,11207,16,26,10,Pending,0,2.4,2024-08-02,1
+SHP00127,AirExpress,Dubai,New York,Industrial,4775.9,7265,7,11,4,Held,3,4.5,2024-12-06,1
+SHP00128,AirExpress,Shanghai,Frankfurt,Consumer Goods,4696.4,7151,19,31,12,Held,1,2.0,2024-03-14,1
+SHP00129,AirExpress,Mumbai,Cape Town,Industrial,3028.2,8588,19,27,8,Exempt,3,3.4,2024-01-21,1
+SHP00130,FastShip,Rotterdam,Tokyo,Industrial,1740.4,10246,15,18,3,Exempt,1,2.5,2024-11-12,1
+SHP00131,AirExpress,Chicago,Toronto,Pharma,3495.6,3630,15,14,0,Pending,1,2.8,2024-11-17,0
+SHP00132,GroundPlus,Rotterdam,Tokyo,Electronics,3493.2,7619,18,29,11,Cleared,2,2.2,2024-02-23,1
+SHP00133,GroundPlus,Singapore,Cape Town,Perishable,2056.4,5901,11,15,4,Cleared,3,2.1,2024-11-23,1
+SHP00134,AirExpress,Chicago,Sydney,Industrial,4280.3,13498,4,2,0,Held,0,4.1,2024-03-10,0
+SHP00135,QuickMove,Dubai,Tokyo,Industrial,2428.9,2735,5,10,5,Exempt,1,3.4,2024-05-22,1
+SHP00136,GlobalFreight,Shanghai,Cape Town,Electronics,3038.9,6307,12,13,1,Exempt,1,2.2,2024-01-06,0
+SHP00137,QuickMove,Shanghai,Toronto,Perishable,897.9,1628,20,24,4,Exempt,0,4.5,2024-09-24,1
+SHP00138,FastShip,Chicago,Tokyo,Perishable,2225.5,652,4,14,10,Pending,1,3.1,2024-05-02,1
+SHP00139,GlobalFreight,Mumbai,New York,Industrial,149.4,977,13,17,4,Cleared,1,4.9,2024-02-19,1
+SHP00140,GlobalFreight,Dubai,London,Electronics,2084.2,4028,13,21,8,Pending,4,2.6,2024-10-04,1
+SHP00141,AirExpress,Chicago,New York,Pharma,1076.8,12184,13,16,3,Cleared,3,4.0,2024-01-07,1
+SHP00142,AirExpress,Shanghai,Toronto,Pharma,339.4,9624,14,13,0,Cleared,1,3.2,2024-11-02,0
+SHP00143,AirExpress,Mumbai,Tokyo,Consumer Goods,3958.4,6118,11,12,1,Held,3,4.0,2024-12-21,0
+SHP00144,GlobalFreight,Rotterdam,London,Perishable,4890.3,16298,5,13,8,Cleared,4,4.7,2024-08-17,1
+SHP00145,AirExpress,SÃ£o Paulo,Tokyo,Pharma,2522.1,935,10,8,0,Cleared,2,2.7,2024-08-07,0
+SHP00146,GlobalFreight,SÃ£o Paulo,New York,Electronics,696.4,16842,12,16,4,Pending,3,2.6,2024-01-20,1
+SHP00147,GlobalFreight,Dubai,Frankfurt,Industrial,3698.9,11270,7,13,6,Held,0,3.6,2024-07-31,1
+SHP00148,QuickMove,Singapore,New York,Pharma,4236.2,11355,13,18,5,Pending,4,2.2,2024-12-06,1
+SHP00149,GlobalFreight,Singapore,Tokyo,Pharma,3044.2,13000,19,27,8,Pending,3,3.9,2024-02-03,1
+SHP00150,AirExpress,Mumbai,London,Electronics,3175.5,5137,9,11,2,Cleared,1,3.8,2024-04-14,0
+SHP00151,GlobalFreight,SÃ£o Paulo,New York,Industrial,3627.7,10706,8,12,4,Pending,3,2.5,2024-05-07,1
+SHP00152,QuickMove,Rotterdam,Frankfurt,Industrial,4839.0,7099,11,24,13,Cleared,2,3.2,2024-03-26,1
+SHP00153,AirExpress,Chicago,Toronto,Consumer Goods,3050.9,14702,7,20,13,Cleared,3,3.3,2024-02-12,1
+SHP00154,QuickMove,SÃ£o Paulo,Frankfurt,Pharma,2768.7,6257,11,21,10,Exempt,2,3.4,2024-07-11,1
+SHP00155,GroundPlus,SÃ£o Paulo,Toronto,Electronics,1672.8,15876,9,11,2,Pending,0,2.0,2024-09-13,0
+SHP00156,QuickMove,Chicago,Toronto,Industrial,4702.0,12727,15,28,13,Held,4,2.2,2024-01-20,1
+SHP00157,FastShip,Chicago,Frankfurt,Pharma,979.2,14796,11,20,9,Exempt,2,4.1,2024-11-29,1
+SHP00158,AirExpress,Chicago,Tokyo,Pharma,1219.3,1630,14,12,0,Pending,2,3.8,2024-12-14,0
+SHP00159,GlobalFreight,Rotterdam,London,Consumer Goods,2895.9,5789,3,4,1,Cleared,3,3.2,2024-10-27,0
+SHP00160,FastShip,SÃ£o Paulo,London,Industrial,837.5,14487,11,18,7,Exempt,4,2.9,2024-07-29,1
+SHP00161,FastShip,Mumbai,Tokyo,Consumer Goods,3885.7,11785,7,13,6,Pending,3,4.1,2024-01-04,1
+SHP00162,GlobalFreight,Singapore,Toronto,Electronics,493.4,14191,19,30,11,Held,3,2.5,2024-07-10,1
+SHP00163,GlobalFreight,Dubai,London,Pharma,2437.5,16969,6,18,12,Pending,1,2.6,2024-04-03,1
+SHP00164,GlobalFreight,Rotterdam,Cape Town,Industrial,2209.2,4078,8,8,0,Held,0,3.1,2024-05-21,0
+SHP00165,FastShip,Rotterdam,New York,Consumer Goods,1181.6,16398,6,4,0,Cleared,2,4.3,2024-01-04,0
+SHP00166,GroundPlus,Singapore,New York,Electronics,1063.2,737,15,29,14,Held,3,3.4,2024-06-21,1
+SHP00167,GroundPlus,Chicago,Sydney,Perishable,3412.5,11741,13,18,5,Held,3,3.1,2024-01-30,1
+SHP00168,QuickMove,Singapore,Sydney,Electronics,25.4,13666,7,5,0,Cleared,4,2.8,2024-12-24,0
+SHP00169,GlobalFreight,Rotterdam,Toronto,Consumer Goods,3434.1,16071,19,30,11,Pending,0,5.0,2024-06-13,1
+SHP00170,FastShip,Dubai,Sydney,Electronics,4848.3,11166,17,22,5,Exempt,3,4.2,2024-02-11,1
+SHP00171,QuickMove,Chicago,Toronto,Electronics,3674.0,10129,9,11,2,Cleared,1,3.5,2024-02-14,0
+SHP00172,QuickMove,Singapore,Tokyo,Consumer Goods,4936.2,15796,8,20,12,Cleared,3,4.0,2024-05-03,1
+SHP00173,GlobalFreight,Shanghai,London,Electronics,536.3,1457,8,16,8,Exempt,2,2.7,2024-05-11,1
+SHP00174,AirExpress,Dubai,New York,Pharma,4614.5,16620,5,13,8,Pending,4,4.3,2024-11-03,1
+SHP00175,FastShip,Dubai,Sydney,Industrial,4551.7,13005,20,31,11,Pending,1,2.8,2024-05-28,1
+SHP00176,FastShip,Mumbai,New York,Perishable,3705.5,6665,6,15,9,Pending,2,4.9,2024-10-22,1
+SHP00177,FastShip,Rotterdam,New York,Consumer Goods,2682.7,13218,16,24,8,Held,1,3.6,2024-11-04,1
+SHP00178,GroundPlus,Shanghai,New York,Industrial,55.9,15593,13,15,2,Held,1,3.5,2024-08-21,0
+SHP00179,GlobalFreight,SÃ£o Paulo,Sydney,Pharma,3737.8,1625,13,20,7,Cleared,2,5.0,2024-12-27,1
+SHP00180,GroundPlus,Chicago,Tokyo,Pharma,2480.2,12843,4,12,8,Pending,1,4.5,2024-04-25,1
+SHP00181,FastShip,Singapore,Cape Town,Pharma,4285.3,13338,12,15,3,Cleared,4,3.2,2024-08-04,1
+SHP00182,AirExpress,Rotterdam,Cape Town,Industrial,1961.4,17796,12,19,7,Pending,4,3.2,2024-03-08,1
+SHP00183,QuickMove,Singapore,Cape Town,Consumer Goods,4330.6,2273,12,24,12,Pending,4,2.4,2024-12-22,1
+SHP00184,AirExpress,Rotterdam,London,Pharma,1098.5,6911,3,12,9,Cleared,1,3.1,2024-08-06,1
+SHP00185,GlobalFreight,Mumbai,New York,Perishable,4871.1,6386,4,5,1,Held,4,3.3,2024-03-17,0
+SHP00186,AirExpress,Shanghai,New York,Electronics,1211.9,16511,12,15,3,Exempt,0,4.3,2024-11-28,1
+SHP00187,AirExpress,Rotterdam,Tokyo,Industrial,1842.9,4432,6,6,0,Cleared,3,3.9,2024-09-17,0
+SHP00188,GlobalFreight,Mumbai,Frankfurt,Consumer Goods,4936.9,16212,11,12,1,Pending,3,3.5,2024-11-26,0
+SHP00189,AirExpress,Rotterdam,Frankfurt,Pharma,506.2,2580,20,23,3,Exempt,0,3.2,2024-10-01,1
+SHP00190,GroundPlus,Chicago,New York,Consumer Goods,4187.3,4566,9,10,1,Pending,4,4.1,2024-01-03,0
+SHP00191,GroundPlus,Chicago,Cape Town,Perishable,624.0,4721,21,25,4,Pending,0,3.7,2024-01-18,1
+SHP00192,FastShip,Mumbai,Frankfurt,Perishable,1824.2,6123,16,14,0,Pending,2,2.1,2024-09-22,0
+SHP00193,QuickMove,Dubai,Frankfurt,Industrial,707.9,16570,13,27,14,Held,4,3.6,2024-04-17,1
+SHP00194,FastShip,Dubai,Cape Town,Electronics,1193.1,6662,7,14,7,Pending,1,3.8,2024-04-20,1
+SHP00195,GroundPlus,Rotterdam,Sydney,Pharma,3648.2,14328,5,11,6,Held,3,3.9,2024-03-24,1
+SHP00196,AirExpress,Chicago,New York,Perishable,3385.9,5193,20,24,4,Cleared,2,5.0,2024-12-22,1
+SHP00197,GlobalFreight,Dubai,Sydney,Consumer Goods,3290.0,17258,8,19,11,Pending,2,5.0,2024-08-10,1
+SHP00198,AirExpress,Mumbai,Frankfurt,Pharma,396.8,4583,20,21,1,Exempt,0,3.0,2024-02-15,0
+SHP00199,QuickMove,Rotterdam,Cape Town,Perishable,740.2,7897,11,9,0,Cleared,3,4.9,2024-04-23,0
+SHP00200,AirExpress,Mumbai,Cape Town,Electronics,886.9,10545,21,34,13,Cleared,4,3.0,2024-10-19,1
+SHP00201,QuickMove,SÃ£o Paulo,Sydney,Consumer Goods,504.3,2071,8,16,8,Exempt,1,3.0,2024-12-13,1
+SHP00202,GroundPlus,SÃ£o Paulo,Frankfurt,Industrial,2389.5,4680,11,9,0,Pending,1,2.4,2024-10-17,0
+SHP00203,QuickMove,Mumbai,Tokyo,Perishable,3540.4,8662,16,28,12,Pending,3,5.0,2024-08-27,1
+SHP00204,GroundPlus,Rotterdam,Sydney,Industrial,2607.8,7996,12,12,0,Held,3,4.3,2024-02-16,0
+SHP00205,FastShip,Mumbai,Tokyo,Pharma,4724.9,5910,21,20,0,Cleared,2,3.7,2024-09-09,0
+SHP00206,FastShip,Chicago,Tokyo,Consumer Goods,4662.9,4970,18,31,13,Cleared,3,2.0,2024-04-07,1
+SHP00207,FastShip,Dubai,Toronto,Consumer Goods,3750.8,8502,19,18,0,Exempt,1,4.0,2024-09-25,0
+SHP00208,GlobalFreight,Shanghai,New York,Perishable,4198.7,17332,14,13,0,Exempt,3,3.1,2024-07-10,0
+SHP00209,FastShip,Rotterdam,Tokyo,Pharma,4160.3,4362,12,19,7,Exempt,2,2.8,2024-01-02,1
+SHP00210,GroundPlus,Chicago,London,Perishable,4646.3,17392,4,16,12,Exempt,0,3.1,2024-11-11,1
+SHP00211,AirExpress,Rotterdam,Sydney,Perishable,544.7,11959,8,18,10,Held,0,2.3,2024-09-08,1
+SHP00212,GlobalFreight,Mumbai,Frankfurt,Consumer Goods,4493.6,13958,6,19,13,Cleared,1,4.3,2024-05-08,1
+SHP00213,GlobalFreight,Chicago,Toronto,Perishable,1503.4,14535,8,14,6,Cleared,3,4.0,2024-08-12,1
+SHP00214,GlobalFreight,Shanghai,Sydney,Industrial,39.0,7003,6,10,4,Held,0,2.4,2024-08-03,1
+SHP00215,QuickMove,Mumbai,London,Pharma,4742.4,9209,6,17,11,Exempt,4,3.5,2024-12-15,1
+SHP00216,GlobalFreight,Rotterdam,Cape Town,Industrial,2514.3,13241,7,8,1,Cleared,0,2.4,2024-06-25,0
+SHP00217,GroundPlus,Mumbai,Cape Town,Pharma,269.7,11711,16,14,0,Exempt,3,2.9,2024-09-05,0
+SHP00218,FastShip,Singapore,Toronto,Pharma,3091.9,17252,8,13,5,Held,0,4.6,2024-12-24,1
+SHP00219,GlobalFreight,Dubai,Cape Town,Industrial,1000.1,3877,19,22,3,Pending,4,3.9,2024-03-17,1
+SHP00220,GlobalFreight,Mumbai,London,Industrial,201.4,6797,7,18,11,Cleared,4,2.6,2024-01-27,1
+SHP00221,AirExpress,Chicago,Frankfurt,Perishable,3503.8,8083,10,18,8,Exempt,3,2.2,2024-08-06,1
+SHP00222,FastShip,Rotterdam,New York,Perishable,1824.2,12002,16,21,5,Held,0,2.5,2024-01-01,1
+SHP00223,FastShip,Dubai,Tokyo,Perishable,1067.8,15968,11,12,1,Exempt,1,2.8,2024-09-08,0
+SHP00224,QuickMove,Rotterdam,Sydney,Electronics,493.5,947,20,22,2,Held,2,4.2,2024-07-04,0
+SHP00225,GroundPlus,SÃ£o Paulo,Frankfurt,Perishable,1198.9,9542,9,19,10,Cleared,0,2.4,2024-11-04,1
+SHP00226,FastShip,Mumbai,Frankfurt,Pharma,972.7,15106,6,6,0,Held,2,4.2,2024-04-13,0
+SHP00227,GroundPlus,Dubai,London,Electronics,647.9,14203,20,26,6,Held,2,3.3,2024-03-01,1
+SHP00228,AirExpress,Mumbai,Toronto,Industrial,2623.6,17010,3,6,3,Held,1,2.9,2024-10-16,1
+SHP00229,FastShip,Singapore,Tokyo,Pharma,3706.2,13525,18,32,14,Cleared,1,3.3,2024-09-17,1
+SHP00230,AirExpress,SÃ£o Paulo,Cape Town,Industrial,2010.2,9396,9,12,3,Cleared,1,3.7,2024-10-30,1
+SHP00231,FastShip,Singapore,Frankfurt,Industrial,2524.1,17705,11,18,7,Pending,2,4.1,2024-10-09,1
+SHP00232,FastShip,Shanghai,London,Electronics,2672.5,10063,4,6,2,Held,1,2.8,2024-01-27,0
+SHP00233,GlobalFreight,Singapore,London,Consumer Goods,589.8,11885,14,22,8,Cleared,4,2.8,2024-03-09,1
+SHP00234,AirExpress,SÃ£o Paulo,Sydney,Perishable,4926.5,841,14,19,5,Held,1,2.8,2024-01-09,1
+SHP00235,GroundPlus,Dubai,Cape Town,Consumer Goods,541.1,13016,11,15,4,Exempt,1,3.0,2024-04-14,1
+SHP00236,GroundPlus,Dubai,Cape Town,Industrial,786.7,8093,16,25,9,Pending,3,2.3,2024-04-02,1
+SHP00237,AirExpress,Shanghai,Cape Town,Pharma,952.4,16573,8,15,7,Cleared,2,2.5,2024-03-31,1
+SHP00238,AirExpress,Dubai,Frankfurt,Pharma,356.6,2860,16,21,5,Exempt,3,2.3,2024-09-26,1
+SHP00239,GlobalFreight,Dubai,Cape Town,Electronics,3020.4,12882,15,13,0,Cleared,0,4.3,2024-11-25,0
+SHP00240,FastShip,Shanghai,London,Electronics,1345.6,942,3,4,1,Held,0,2.6,2024-09-02,0
+SHP00241,GroundPlus,Chicago,Cape Town,Pharma,1543.9,16192,7,12,5,Cleared,4,4.1,2024-11-17,1
+SHP00242,GroundPlus,Mumbai,New York,Electronics,523.0,10223,6,20,14,Exempt,1,2.0,2024-04-24,1
+SHP00243,FastShip,Shanghai,Toronto,Industrial,745.4,9899,10,20,10,Cleared,3,2.5,2024-02-26,1
+SHP00244,GlobalFreight,Mumbai,Sydney,Perishable,390.7,11435,6,15,9,Cleared,0,3.8,2024-04-01,1
+SHP00245,AirExpress,SÃ£o Paulo,Sydney,Consumer Goods,915.0,14434,7,14,7,Held,2,4.6,2024-05-18,1
+SHP00246,AirExpress,Dubai,Sydney,Perishable,4055.5,3002,3,5,2,Pending,2,2.4,2024-08-16,0
+SHP00247,AirExpress,Singapore,New York,Electronics,2893.4,9625,7,7,0,Held,1,2.5,2024-07-16,0
+SHP00248,QuickMove,Rotterdam,Toronto,Industrial,2411.6,14064,13,15,2,Pending,3,3.3,2024-09-11,0
+SHP00249,GroundPlus,SÃ£o Paulo,Toronto,Consumer Goods,2685.7,8040,15,15,0,Exempt,4,3.7,2024-12-21,0
+SHP00250,GlobalFreight,Dubai,New York,Pharma,1814.9,7161,3,12,9,Exempt,1,4.8,2024-01-31,1
+SHP00251,QuickMove,Rotterdam,Cape Town,Pharma,1480.5,5223,20,31,11,Pending,1,4.5,2024-01-29,1
+SHP00252,GlobalFreight,Mumbai,Tokyo,Pharma,1893.5,1363,16,25,9,Cleared,0,4.0,2024-02-07,1
+SHP00253,AirExpress,Singapore,Frankfurt,Pharma,160.6,12468,7,7,0,Pending,0,2.0,2024-08-01,0
+SHP00254,GlobalFreight,Singapore,London,Industrial,3720.4,17783,12,25,13,Exempt,2,3.3,2024-11-26,1
+SHP00255,FastShip,Rotterdam,New York,Pharma,309.4,1552,8,22,14,Pending,0,3.2,2024-08-04,1
+SHP00256,AirExpress,SÃ£o Paulo,Tokyo,Perishable,4596.6,16945,12,17,5,Exempt,1,2.8,2024-02-17,1
+SHP00257,GroundPlus,Chicago,London,Pharma,2008.0,2334,10,20,10,Pending,4,3.8,2024-02-09,1
+SHP00258,AirExpress,Chicago,Sydney,Industrial,4138.0,5900,4,13,9,Exempt,1,2.8,2024-02-23,1
+SHP00259,FastShip,Rotterdam,Frankfurt,Perishable,150.0,9747,8,9,1,Cleared,1,3.8,2024-06-07,0
+SHP00260,GlobalFreight,SÃ£o Paulo,London,Electronics,1209.3,3286,21,20,0,Exempt,0,2.1,2024-02-17,0
+SHP00261,QuickMove,Mumbai,Sydney,Perishable,4794.1,16891,9,17,8,Exempt,2,4.9,2024-12-25,1
+SHP00262,FastShip,Rotterdam,Toronto,Consumer Goods,514.0,5421,3,13,10,Exempt,4,4.6,2024-01-20,1
+SHP00263,QuickMove,Shanghai,London,Industrial,403.0,3556,10,14,4,Pending,1,5.0,2024-09-13,1
+SHP00264,GroundPlus,Dubai,Frankfurt,Consumer Goods,4651.8,11687,17,19,2,Held,2,3.1,2024-08-08,0
+SHP00265,FastShip,Dubai,Cape Town,Industrial,1203.2,2957,7,20,13,Cleared,0,2.4,2024-06-07,1
+SHP00266,GroundPlus,Singapore,Cape Town,Electronics,2499.6,15403,13,16,3,Held,1,2.2,2024-10-22,1
+SHP00267,QuickMove,Rotterdam,New York,Electronics,904.1,15597,11,24,13,Held,3,4.0,2024-03-12,1
+SHP00268,FastShip,SÃ£o Paulo,Toronto,Electronics,1823.7,9892,15,26,11,Pending,3,3.1,2024-11-15,1
+SHP00269,QuickMove,Rotterdam,New York,Industrial,2534.7,9112,4,3,0,Pending,4,2.0,2024-02-23,0
+SHP00270,QuickMove,Chicago,London,Consumer Goods,2002.4,2891,10,20,10,Exempt,0,3.0,2024-08-27,1
+SHP00271,GroundPlus,Singapore,Toronto,Electronics,438.3,4050,15,26,11,Pending,3,3.0,2024-06-11,1
+SHP00272,QuickMove,SÃ£o Paulo,Toronto,Pharma,3514.4,16104,6,12,6,Exempt,0,3.6,2024-08-28,1
+SHP00273,GlobalFreight,Dubai,London,Perishable,2845.4,12961,4,13,9,Exempt,3,2.6,2024-04-18,1
+SHP00274,FastShip,Singapore,Tokyo,Industrial,1356.5,6270,5,7,2,Cleared,2,3.2,2024-06-01,0
+SHP00275,AirExpress,Singapore,Toronto,Consumer Goods,1078.4,9001,8,7,0,Cleared,3,3.0,2024-06-01,0
+SHP00276,GlobalFreight,Shanghai,Sydney,Industrial,2413.3,5765,16,25,9,Exempt,0,3.7,2024-11-01,1
+SHP00277,GlobalFreight,Mumbai,Tokyo,Consumer Goods,3086.4,11108,13,11,0,Pending,3,4.8,2024-09-12,0
+SHP00278,QuickMove,Mumbai,Cape Town,Industrial,1321.4,620,17,19,2,Exempt,4,2.3,2024-04-21,0
+SHP00279,GlobalFreight,Chicago,Tokyo,Consumer Goods,3874.2,12871,9,18,9,Pending,1,4.9,2024-10-22,1
+SHP00280,FastShip,Rotterdam,Cape Town,Perishable,90.8,10558,19,20,1,Exempt,3,3.2,2024-06-29,0
+SHP00281,QuickMove,Singapore,Frankfurt,Industrial,2620.6,11504,6,9,3,Exempt,3,3.1,2024-10-10,1
+SHP00282,GroundPlus,Shanghai,Frankfurt,Industrial,1914.0,14835,12,13,1,Cleared,0,2.3,2024-01-09,0
+SHP00283,GroundPlus,Chicago,New York,Industrial,3752.2,3767,17,31,14,Cleared,2,4.6,2024-04-18,1
+SHP00284,GlobalFreight,Singapore,Toronto,Consumer Goods,1911.6,6908,18,19,1,Held,3,3.2,2024-11-26,0
+SHP00285,AirExpress,Mumbai,Sydney,Pharma,2542.7,9269,11,18,7,Exempt,1,2.0,2024-07-31,1
+SHP00286,FastShip,Mumbai,New York,Pharma,3954.6,17505,13,21,8,Pending,4,5.0,2024-05-03,1
+SHP00287,GroundPlus,Chicago,London,Consumer Goods,3225.7,2190,21,32,11,Pending,3,4.9,2024-03-29,1
+SHP00288,AirExpress,Rotterdam,Frankfurt,Pharma,2192.6,3762,7,21,14,Cleared,4,4.4,2024-11-17,1
+SHP00289,QuickMove,Singapore,Frankfurt,Pharma,4744.0,7176,5,5,0,Cleared,3,2.0,2024-10-30,0
+SHP00290,GlobalFreight,Mumbai,Frankfurt,Consumer Goods,4603.8,3081,21,31,10,Cleared,1,5.0,2024-11-20,1
+SHP00291,QuickMove,Shanghai,London,Pharma,1491.6,8536,15,21,6,Cleared,2,2.2,2024-03-14,1
+SHP00292,FastShip,Dubai,Frankfurt,Electronics,563.5,4520,6,8,2,Held,2,4.7,2024-02-17,0
+SHP00293,FastShip,Chicago,Cape Town,Perishable,4564.5,7314,15,16,1,Exempt,0,3.2,2024-09-06,0
+SHP00294,FastShip,Shanghai,Tokyo,Industrial,1882.5,10775,17,20,3,Pending,2,2.0,2024-04-01,1
+SHP00295,GroundPlus,Dubai,Frankfurt,Electronics,594.9,11733,14,27,13,Cleared,1,3.6,2024-05-10,1
+SHP00296,FastShip,Shanghai,Frankfurt,Electronics,2684.4,17473,19,21,2,Pending,2,2.3,2024-04-21,0
+SHP00297,FastShip,Rotterdam,London,Pharma,426.4,4647,11,17,6,Exempt,1,4.9,2024-06-27,1
+SHP00298,GroundPlus,Dubai,Sydney,Industrial,3728.5,16746,16,30,14,Exempt,1,2.8,2024-04-11,1
+SHP00299,QuickMove,Chicago,New York,Consumer Goods,3967.8,10710,8,12,4,Exempt,3,4.6,2024-08-04,1
+SHP00300,GroundPlus,Dubai,Sydney,Perishable,3118.3,13051,16,20,4,Held,2,4.7,2024-02-02,1
+SHP00301,AirExpress,Shanghai,New York,Consumer Goods,1272.8,13928,12,26,14,Held,3,2.1,2024-04-02,1
+SHP00302,QuickMove,Chicago,Cape Town,Pharma,1795.1,2880,9,18,9,Held,1,4.3,2024-03-03,1
+SHP00303,FastShip,Rotterdam,Tokyo,Electronics,3586.8,7504,17,25,8,Pending,4,2.2,2024-05-25,1
+SHP00304,GroundPlus,Shanghai,Frankfurt,Pharma,523.6,9611,5,16,11,Exempt,2,4.4,2024-04-11,1
+SHP00305,GlobalFreight,Mumbai,Cape Town,Industrial,2498.3,9492,16,17,1,Cleared,3,2.5,2024-06-16,0
+SHP00306,GroundPlus,Chicago,London,Consumer Goods,116.1,1084,21,19,0,Exempt,2,2.4,2024-07-25,0
+SHP00307,FastShip,SÃ£o Paulo,Frankfurt,Electronics,1693.6,1033,5,18,13,Cleared,3,4.2,2024-05-20,1
+SHP00308,QuickMove,Singapore,Sydney,Industrial,408.0,10762,18,17,0,Exempt,2,4.1,2024-08-20,0
+SHP00309,AirExpress,Singapore,Tokyo,Electronics,4216.9,3866,3,8,5,Cleared,0,2.4,2024-06-14,1
+SHP00310,AirExpress,Shanghai,London,Electronics,963.9,12587,20,18,0,Cleared,2,4.6,2024-01-23,0
+SHP00311,FastShip,Mumbai,Sydney,Electronics,1326.0,12937,11,14,3,Pending,4,3.4,2024-03-05,1
+SHP00312,QuickMove,Singapore,London,Consumer Goods,4440.1,14042,17,18,1,Pending,4,3.4,2024-09-07,0
+SHP00313,QuickMove,Rotterdam,Cape Town,Industrial,1136.9,9144,12,12,0,Held,4,4.5,2024-05-04,0
+SHP00314,GlobalFreight,Dubai,New York,Electronics,4859.1,2474,9,7,0,Pending,3,4.5,2024-04-06,0
+SHP00315,AirExpress,Mumbai,Sydney,Pharma,4071.8,17789,19,27,8,Held,3,4.0,2024-09-15,1
+SHP00316,FastShip,Shanghai,London,Perishable,1934.0,15325,19,23,4,Exempt,1,2.2,2024-08-04,1
+SHP00317,GlobalFreight,Dubai,Sydney,Consumer Goods,3245.4,5326,17,18,1,Cleared,1,2.0,2024-08-23,0
+SHP00318,GlobalFreight,Rotterdam,New York,Industrial,3312.8,15332,14,20,6,Cleared,4,2.3,2024-08-08,1
+SHP00319,GlobalFreight,Shanghai,Toronto,Consumer Goods,2159.9,11435,4,16,12,Held,2,2.3,2024-11-28,1
+SHP00320,AirExpress,Dubai,Toronto,Pharma,1477.1,13695,8,14,6,Exempt,4,3.3,2024-12-14,1
+SHP00321,FastShip,Dubai,London,Electronics,1105.7,2241,4,10,6,Pending,0,3.6,2024-05-21,1
+SHP00322,GlobalFreight,SÃ£o Paulo,Tokyo,Industrial,1965.6,3819,10,16,6,Exempt,1,2.5,2024-04-14,1
+SHP00323,QuickMove,Dubai,Sydney,Consumer Goods,1447.0,601,6,9,3,Exempt,2,4.6,2024-12-18,1
+SHP00324,GlobalFreight,Shanghai,Sydney,Electronics,841.6,11384,17,19,2,Cleared,3,3.3,2024-01-11,0
+SHP00325,GlobalFreight,Rotterdam,New York,Pharma,3399.2,818,14,27,13,Cleared,3,4.6,2024-08-29,1
+SHP00326,FastShip,Mumbai,Cape Town,Electronics,2840.7,10024,10,24,14,Pending,1,4.3,2024-02-21,1
+SHP00327,QuickMove,Singapore,Tokyo,Perishable,2268.6,11994,20,26,6,Exempt,2,3.1,2024-01-07,1
+SHP00328,QuickMove,Rotterdam,Tokyo,Perishable,4457.9,16371,6,12,6,Cleared,1,4.9,2024-04-22,1
+SHP00329,GlobalFreight,Rotterdam,Toronto,Electronics,1229.4,14613,14,18,4,Cleared,1,4.8,2024-07-12,1
+SHP00330,FastShip,Rotterdam,Tokyo,Consumer Goods,4497.1,15221,19,22,3,Held,2,4.7,2024-07-19,1
+SHP00331,GroundPlus,Chicago,Sydney,Perishable,961.0,17541,13,14,1,Exempt,3,3.7,2024-06-26,0
+SHP00332,QuickMove,Mumbai,New York,Industrial,4636.9,5321,17,19,2,Held,4,3.7,2024-03-24,0
+SHP00333,QuickMove,Chicago,Sydney,Electronics,4000.9,1010,17,16,0,Pending,2,4.5,2024-03-04,0
+SHP00334,FastShip,Chicago,Sydney,Electronics,2157.3,521,4,10,6,Pending,2,4.6,2024-09-14,1
+SHP00335,GroundPlus,Shanghai,New York,Perishable,721.8,6946,16,16,0,Held,1,2.1,2024-06-30,0
+SHP00336,GlobalFreight,Singapore,Tokyo,Industrial,2118.6,3715,11,18,7,Held,1,3.7,2024-12-13,1
+SHP00337,QuickMove,Singapore,Frankfurt,Pharma,3419.8,7037,11,13,2,Exempt,4,2.6,2024-06-05,0
+SHP00338,FastShip,Rotterdam,Frankfurt,Industrial,2733.7,12819,16,17,1,Pending,4,3.3,2024-06-09,0
+SHP00339,GroundPlus,Dubai,Tokyo,Perishable,2347.2,14513,17,28,11,Exempt,3,2.1,2024-10-13,1
+SHP00340,FastShip,Singapore,Toronto,Electronics,3781.7,10408,10,24,14,Held,1,3.9,2024-10-16,1
+SHP00341,QuickMove,Mumbai,Cape Town,Industrial,638.4,695,17,31,14,Exempt,0,2.3,2024-05-18,1
+SHP00342,FastShip,Rotterdam,Frankfurt,Electronics,4111.5,16276,13,12,0,Cleared,4,4.0,2024-01-28,0
+SHP00343,GlobalFreight,SÃ£o Paulo,London,Consumer Goods,3704.7,16730,7,12,5,Pending,2,3.9,2024-01-04,1
+SHP00344,AirExpress,SÃ£o Paulo,Tokyo,Pharma,582.4,501,7,8,1,Cleared,1,2.6,2024-08-30,0
+SHP00345,FastShip,Singapore,Frankfurt,Industrial,1959.7,4491,12,22,10,Exempt,1,4.5,2024-10-06,1
+SHP00346,QuickMove,Singapore,Frankfurt,Industrial,4298.0,4536,16,18,2,Cleared,1,2.4,2024-12-02,0
+SHP00347,GlobalFreight,Shanghai,Frankfurt,Consumer Goods,1009.8,16243,12,19,7,Cleared,4,3.5,2024-12-07,1
+SHP00348,QuickMove,Chicago,Toronto,Electronics,2325.2,14420,7,5,0,Held,3,2.4,2024-07-18,0
+SHP00349,FastShip,SÃ£o Paulo,Sydney,Electronics,3229.1,15064,4,13,9,Pending,3,4.6,2024-08-22,1
+SHP00350,QuickMove,Mumbai,London,Perishable,2508.2,16989,9,18,9,Exempt,4,2.2,2024-12-01,1
