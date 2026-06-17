@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>LogiTrack Data Contract Report</title>
+<style>
+body { font-family: 'Segoe UI', Arial, sans-serif; margin: 40px; background: #f5f7fa; }
+h1 { color: #1a3a5c; border-bottom: 3px solid #1a3a5c; padding-bottom: 10px; }
+.subtitle { color: #555; margin-bottom: 30px; }
+table { border-collapse: collapse; width: 100%; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+th { background: #1a3a5c; color: white; padding: 14px; text-align: left; font-size: 14px; }
+td { padding: 14px; border-bottom: 1px solid #e0e0e0; }
+.pass { color: #2e7d32; font-weight: bold; }
+.fail { color: #c62828; font-weight: bold; }
+.summary { margin-top: 20px; padding: 15px; border-radius: 6px; }
+.summary.pass { background: #e8f5e9; }
+.summary.fail { background: #ffebee; }
+</style></head><body>
+<h1>LogiTrack — Data Contract Report</h1>
+<p class="subtitle">Great Expectations validation for <code>logitrack_raw.csv</code> | Generated for VP of Operations review</p>
+<table>
+<tr><th>Rule</th><th>Pass/Fail</th><th>Business Impact</th></tr>
+<tr><td>shipment_id: expect_column_values_to_not_be_null</td><td class="fail">FAIL</td><td>Un-trackable shipments create legal exposure. Every ID must be present for client audit trail.</td></tr>
+<tr><td>delayed_flag: expect_column_values_to_not_be_null</td><td class="fail">FAIL</td><td>Missing delay flags block the entire AI prediction model and penalty tracking system.</td></tr>
+<tr><td>weight_kg: expect_column_values_to_be_between</td><td class="fail">FAIL</td><td>Negative weights cause incorrect freight costing and safety violations in loading.</td></tr>
+<tr><td>promised_transit_days: expect_column_values_to_be_between</td><td class="pass">PASS</td><td>Out-of-range windows erode client trust in SLAs and trigger false penalty assessments.</td></tr>
+<tr><td>carrier_rating: expect_column_values_to_be_between</td><td class="pass">PASS</td><td>Invalid ratings corrupt carrier scorecards used for procurement decisions.</td></tr>
+<tr><td>customs_status: expect_column_values_to_be_in_set</td><td class="pass">PASS</td><td>Unexpected customs values break notification logic and delay root-cause analysis.</td></tr>
+</table><div class="summary fail"><strong>Overall Verdict: FAIL — One or more checks failed. Data requires remediation before model training.</strong></div></body></html>
